@@ -69,17 +69,17 @@ gem install jekyll-whiteglass
    ```
 
 4. Copy
-   [`index.html`](https://github.com/yous/whiteglass/blob/master/index.html),
-   [`about.md`](https://github.com/yous/whiteglass/blob/master/about.md),
-   [`archives.md`](https://github.com/yous/whiteglass/blob/master/archives.md),
-   [`feed.xml`](https://github.com/yous/whiteglass/blob/master/feed.xml), and
-   [`_data/navigation.yml`](https://github.com/yous/whiteglass/blob/master/_data/navigation.yml)
+   [`index.html`](https://github.com/nullpixel/jekyll-appleblob/master/index.html),
+   [`about.md`](https://github.com/nullpixel/jekyll-appleblob/master/about.md),
+   [`archives.md`](https://github.com/nullpixel/jekyll-appleblob/master/archives.md),
+   [`feed.xml`](https://github.com/nullpixel/jekyll-appleblob/master/feed.xml), and
+   [`_data/navigation.yml`](https://github.com/nullpixel/jekyll-appleblob/master/_data/navigation.yml)
    from the theme:
 
    ``` sh
    rm index.md
-   curl -L -O "https://github.com/yous/whiteglass/raw/master/{index.html,about.md,archives.md,feed.xml}"
-   curl -L --create-dirs -o _data/navigation.yml https://github.com/yous/whiteglass/raw/master/_data/navigation.yml
+   curl -L -O "https://github.com/nullpixel/jekyll-appleraw/master/{index.html,about.md,archives.md,feed.xml}"
+   curl -L --create-dirs -o _data/navigation.yml https://github.com/nullpixel/jekyll-appleraw/master/_data/navigation.yml
    ```
 
 5. Install gems and you're good to go! The blog will be available on

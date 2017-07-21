@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-whiteglass"
+  spec.name          = "jekyll-apple"
   spec.version       = "1.3.0"
-  spec.authors       = ["Chayoung You"]
-  spec.email         = ["yousbe@gmail.com"]
+  spec.authors       = ["Jamie Bishop"]
+  spec.email         = ["jamie@nullpixel.uk"]
 
   spec.summary       = %q{Minimal, responsive Jekyll theme for hackers.}
-  spec.homepage      = "https://github.com/yous/whiteglass"
+  spec.homepage      = "https://github.com/nullpixel/jekyll-apple"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
