@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-apple"
-  spec.version       = "1.3.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["Jamie Bishop"]
   spec.email         = ["jamie@nullpixel.uk"]
 
-  spec.summary       = %q{Minimal, responsive Jekyll theme for hackers.}
+  spec.summary       = %q{Minimal, apple style jekyll theme.}
   spec.homepage      = "https://github.com/nullpixel/jekyll-apple"
   spec.license       = "MIT"
 
