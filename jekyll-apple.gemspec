@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jamie Bishop"]
   spec.email         = ["jamie@nullpixel.uk"]
 
-  spec.summary       = %q{Minimal, apple style jekyll theme.}
+  spec.summary       = %q{A minimal, apple style jekyll theme.}
   spec.homepage      = "https://github.com/nullpixel/jekyll-apple"
   spec.license       = "MIT"
 
@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency "jekyll", "~> 3.3"
-  spec.add_runtime_dependency "jekyll-archives", "~> 2.1"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.0"
 

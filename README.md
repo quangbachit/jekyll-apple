@@ -51,20 +51,12 @@ gem install jekyll-apple
    ``` yaml
    theme: jekyll-apple
    gems:
-     - jekyll-archives
      - jekyll-paginate
      - jekyll-sitemap
 
    permalink: /:year/:month/:day/:title/
    paginate_path: /posts/:num/
    paginate: 5
-
-   jekyll-archives:
-     enabled:
-       - categories
-     layout: category_archives
-     permalinks:
-       category: /categories/:name/
    ```
 
 4. Copy
@@ -174,26 +166,6 @@ external-url: https://github.com/nullpixel/jekyll-apple
 Then the title of your post would look like a link with text
 `Jekyll apple theme →`. This also applies to your blog feed.
 
-### Category
-
-Each post can have `categories` attribute. It can be a string or an array. This
-will be displayed on index, archive and each post, and provide a link to the
-archive of category.
-
-``` yaml
-layout: post
-title: Awesome Post
-categories: Misc
-```
-
-``` yaml
-layout: post
-title: Another Awesome Post
-categories:
-  - Misc
-  - Idea
-```
-
 ### Feed
 
 Create `<your-site>/feed.xml` with:
@@ -272,8 +244,6 @@ To define header links, add titles and URLs under the `main` key in
 main:
   - title: "About"
     url: /about/
-  - title: "Archives"
-    url: /archives/
   - title: "GitHub"
     url: https://github.com/yous/whiteglass
 ```

@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: apple theme
+title: jekyll apple
 author: nullpixel
 description: Minimal, apple style jekyll theme.
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -26,10 +26,9 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - README.md
-  - LICENSE.txt
-  - CHANGELOG.md
+  - LICENSE
+  - changes.md
   - jekyll-apple.gemspec
-  - screenshot.png
   - vendor
 
 # Social media
@@ -63,11 +62,3 @@ kramdown:
   footnote_nr: 1
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   toc_levels: 1..6
-
-# jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: category_archives
-  permalinks:
-    category: /categories/:name/
