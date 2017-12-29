@@ -2,7 +2,9 @@
  * Site header
  */
 .site-header {
-  min-height: 48px;
+  height: 44px;
+  line-height: 44px;
+
   background: $dark-background-color;
   background: rgba(0, 0, 0, 0.8);
 
@@ -21,17 +23,20 @@
 
 .site-title {
   color: $light-text-color !important;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  
+  :hover {
+    opacity: $a-hover-opacity; 
+    text-decoration: none;
+  }
 }
 
 .site-nav {
   float: right;
-  line-height: 56px;
   font-size: $nav-font-size;
 
   a:hover {
@@ -67,7 +72,12 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding: 20px 0;
   font-size: 15px;
   color: $grey-color;
   background-color: $footer-background-color;
@@ -80,7 +90,16 @@
  * Page content
  */
 .page-content {
-  padding: 80px 0;
+  //padding: 80px 0;
+  padding-top: 50px;
+
+  @include media-query($on-medium) {
+    padding-top: 40px;
+  }
+
+  @include media-query($on-small) {
+    padding-top: 30px
+  }
 }
 
 .page-heading {
@@ -96,7 +115,7 @@
   }
 
   > li {
-    margin-bottom: $spacing-unit * 2;
+    margin-bottom: $spacing-unit;
 
     &:not(:first-child) {
       border-top: 4px solid $grey-color-light;
@@ -119,8 +138,25 @@
 }
 
 .post-meta {
-  font-size: $small-font-size;
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 400;
+  letter-spacing: .011em;
   color: $grey-color;
+
+  margin-top: .4em;
+
+  @include media-query($on-medium) {
+    font-size: 19px;
+    line-height: 1.21053;
+    letter-spacing: .012em;
+  }
+
+  @include media-query($on-small) {
+    font-size: 19px;
+    line-height: 1.21053;
+    letter-spacing: .012em;
+  }
 }
 
 .post-link {
@@ -150,16 +186,38 @@
 /**
  * Posts
  */
+.post {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+
+  @include media-query($on-small) {
+    width: 83.33333%;
+  }
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }
 
 .post-title {
-  letter-spacing: -1px;
-  line-height: 1;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  margin-bottom: 0px;
 
-  @include media-query($on-laptop) {
-    font-size: 36px;
+  @include media-query($on-medium) {
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: .004em;
+  }
+
+  @include media-query($on-small) {
+    font-size: 27px;
+    line-height: 1.14815;
+    letter-spacing: .008em;
   }
 }
 
@@ -175,10 +233,21 @@
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-medium) {
       font-size: 22px;
+      line-height: 1.18182;
+      letter-spacing: .01em;
+    }
+
+    @include media-query($on-small) {
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: .011em;
     }
   }
 
@@ -186,7 +255,7 @@
     font-size: 20px;
 
     @include media-query($on-laptop) {
-      font-size: 18px;
+      font-size: 22px;
     }
   }
 }

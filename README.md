@@ -245,7 +245,7 @@ main:
   - title: "About"
     url: /about/
   - title: "GitHub"
-    url: https://github.com/yous/whiteglass
+    url: https://github.com/nullpixel/jekyll-apple
 ```
 
 ### Enabling Google Analytics

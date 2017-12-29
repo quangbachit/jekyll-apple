@@ -8,7 +8,7 @@ $small-font-size:  $base-font-size * 0.875 !default;
 $nav-font-size: 14px !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:     15px !default;
 
 $text-color:       #333 !default;
 $light-text-color: #fff !default;
@@ -26,7 +26,8 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $content-width:    980px !default;
 $on-palm:          692px !default;
 $on-laptop:        980px !default;
-
+$on-medium:        1068px !default;
+$on-small:         735px !default;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
