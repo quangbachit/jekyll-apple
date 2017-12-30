@@ -1,11 +1,11 @@
 // Define defaults for each variable.
 $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace !default;
+$monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 $base-font-size:   17px !default;
 $base-font-weight: 400 !default;
 $heavy-font-weight: 500 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$nav-font-size: 14px !default;
+$nav-font-size: 16px !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     15px !default;

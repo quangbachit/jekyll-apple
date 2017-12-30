@@ -44,7 +44,9 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
+p+h1, ul+h1, ol+h1, p+h2, ul+h2, ol+h2, p+h3, ul+h3, ol+h3, p+h4, ul+h4, ol+h4, p+h5, ul+h5, ol+h5, p+h6, ul+h6, ol+h6 {
+  margin-top: 1.4em;
+}
 
 /**
  * Images
@@ -59,12 +61,30 @@ img {
 /**
  * Figures
  */
+figure {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 figure > img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 figcaption {
-  font-size: $small-font-size;
+  font-size: 17px;
+  line-height: 1.52947;
+  font-weight: 600;
+  letter-spacing: -.021em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left
 }
 
 
@@ -73,7 +93,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 1.17647em;
 }
 
 li {
@@ -116,7 +136,7 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    opacity: $a-hover-opacity;  
   }
 }
 
@@ -144,10 +164,10 @@ blockquote {
  * Rules
  */
 hr {
-  height: 4px;
-  margin: $spacing-unit / 2 0;
   border: 0;
-  background-color: $grey-color-light;
+  height: 1px;
+  background: #d6d6d6;
+  margin: 65px 0
 }
 
 

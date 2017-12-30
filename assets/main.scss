@@ -3,9 +3,9 @@
 @charset "utf-8";
 
 $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace;
+$monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 $base-font-size: 17px;
-$nav-font-size: 14px;
+$nav-font-size: 16px;
 $base-font-weight: 400;
 $heavy-font-weight: 500;
 $small-font-size:$base-font-size * 0.875;
